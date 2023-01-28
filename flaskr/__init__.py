@@ -44,8 +44,13 @@ def create_app(test_config=None):
     except OSError:
         pass
 
+    # register the database commands
     from . import db
     db.init_app(app)
+
+    # register the auth blueprint
+    from . import auth
+    app.register_blueprint(auth.bp)
 
     # a simple page that says hello
     @app.route('/hello')
