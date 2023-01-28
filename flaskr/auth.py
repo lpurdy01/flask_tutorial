@@ -4,7 +4,8 @@ auth.py
 Contributors: Levi Purdy
 Describes the blueprints for the authentication system
 
-Disclaimers:
+Disclaimers:Constructed from the flask tutorial at:
+https://flask.palletsprojects.com/en/2.2.x/tutorial/database/
 """
 
 """
